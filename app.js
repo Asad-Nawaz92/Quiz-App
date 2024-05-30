@@ -10,7 +10,11 @@ function signup() {
   var confirmPassword = confirmpasswordInput.value;
 
   if (password != confirmPassword) {
-    alert("Passwords do not match.");
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Passwords do not match.'
+    });
     return;
   }
 
@@ -20,12 +24,20 @@ function signup() {
     email === "" ||
     password === ""
   ) {
-    alert("Please fill in all fields.");
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please fill in all fields.'
+    });
     return;
   }
 
   if (password.length < 6) {
-    alert("Password must be at least 6 characters long.");
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Password must be at least 6 characters long.'
+    });
     return;
   }
   var usersJSON = localStorage.getItem("users");
@@ -36,8 +48,13 @@ function signup() {
   });
 
   if (existingUser) {
-    alert("User with this email already exists. Please Login.");
-    location.href = "./signin.html";
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'User with this email already exists. Please Login.'
+    }).then(() => {
+      location.href = "./signin.html";
+    });
     return;
   }
 
@@ -67,7 +84,12 @@ function signin() {
   if (user) {
     location.href = "./welcome.html";
   } else {
-    alert("Invalid email or password. Please try again.");
-    location.href = "./signin.html";
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Invalid email or password. Please try again.'
+    }).then(() => {
+      location.href = "./signin.html";
+    });
   }
 }
