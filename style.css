@@ -95,7 +95,7 @@ h2 {
 }
 
 .container a {
-  color: #fff;
+  color: #fff;  
   text-decoration: none;
 }
 
@@ -113,17 +113,16 @@ button {
   border-radius: 3px;
   font-size: 16px;
   border: 2px solid transparent;
-  transition: 0.3s ease;
+  transition: all 0.3s;
 }
 
 button:hover {
   color: #fff;
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.15);
+  background: #064439;
 }
 
 .register {
   text-align: center;
   margin-top: 30px;
-  color: #fff;
+  color: #ffff;
 }

@@ -148,15 +148,15 @@ var questions = [
       { text: "h1 {background: blue;}", correct: false },
     ],
   },
-  // {
-  //   question: "Which CSS property controls the text size?",
-  //   options: [
-  //     { text: "font-style", correct: false },
-  //     { text: "text-size", correct: false },
-  //     { text: "font-size", correct: true },
-  //     { text: "text-style", correct: false },
-  //   ],
-  // },
+  {
+    question: "Which CSS property controls the text size?",
+    options: [
+      { text: "font-style", correct: false },
+      { text: "text-size", correct: false },
+      { text: "font-size", correct: true },
+      { text: "text-style", correct: false },
+    ],
+  },
   // {
   //   question:
   //     "How do you make each word in a text start with a capital letter in CSS?",
