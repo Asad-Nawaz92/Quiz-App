@@ -8,65 +8,131 @@
 }
 
 body {
-    background-color: #064439;    
+  background-color: #064439;
+  overflow: hidden;
 }
 
-.main{
-    background-color: white;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    padding: 30px;
-    border-radius: 10px;
+.main {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto 0;
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .main h1 {
-    color: #064439;
-    font-size: 25px;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+  color: #064439;
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.description {
+  color: #064439;
+  font-size: 16px;
+  margin: 25px 0;
 }
 
 .app {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
-.app h2{
-    color: #064439;
-    font-size: 18px;
-    font-weight: 600;
+#timer {
+  font-size: 18px;
+  font-weight: 600;
+  color: #064439;
+  background-color: #9aeabc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #064439;
 }
 
-.btn{
-    background-color: white;
-    color: #222;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
+.app h2 {
+  color: #064439;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.btn:hover{
-    background-color: #222;
-    color: #fff;
-
+.btn {
+  background-color: white;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 9px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-#nxt-btn{
-    background-color: #064439;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
+.btn:hover:not([disabled]) {
+  background-color: #222;
+  color: #fff;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#nxt-btn {
+  background-color: #064439;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+#nxt-btn:hover {
+  background-color: #031e19;
+}
+
+.correct {
+  background-color: #9aeabc;
+}
+
+.incorrect {
+  background-color: #ff9393;
+}
+
+.btn-start {
+  background-color: #169c35;
+  color: white;
+  width: auto;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-start:hover {
+  background-color: #228036;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  width: auto;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
 }

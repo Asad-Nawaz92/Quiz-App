@@ -12,7 +12,12 @@
 <body>
     <div class="main">
         <h1>Quiz App</h1>
-        <div class="app">
+        <p class="description" style="display: block;">Test your knowledge of HTML, CSS, and JavaScript with this quiz!
+        </p>
+        <button id="start-btn" class="btn-start">Start Quiz</button>
+        <button class="logout-btn" onclick="logOut()">Log Out</button>
+        <div class="app" style="display:none;">
+            <div id="timer">Time left: 10:00</div>
             <h2 id="question">Questions</h2>
             <div id="options-btn">
                 <button class="btn">Option1</button>
