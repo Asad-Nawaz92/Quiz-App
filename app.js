@@ -55,178 +55,178 @@ var questions = [
       { text: "text-style", correct: false },
     ],
   },
-  // {
-  //   question:
-  //     "How do you make each word in a text start with a capital letter in CSS?",
-  //   options: [
-  //     { text: "text-transform: uppercase;", correct: false },
-  //     { text: "text-transform: capitalize;", correct: true },
-  //     { text: "transform: capitalize;", correct: false },
-  //     { text: "capitalize: text-transform;", correct: false },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "What is the correct CSS syntax to change the font of an element?",
-  //   options: [
-  //     { text: "font: 'Times New Roman';", correct: false },
-  //     { text: "font-face: 'Times New Roman';", correct: false },
-  //     { text: "fontname: 'Times New Roman';", correct: false },
-  //     { text: "font-family: 'Times New Roman';", correct: true },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "How can you make a list that lists its items with squares in CSS?",
-  //   options: [
-  //     { text: "list-style-type: square;", correct: true },
-  //     { text: "list-type: square;", correct: false },
-  //     { text: "list: square;", correct: false },
-  //     { text: "list-style: square;", correct: false },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "Which property is used to change the left margin of an element in CSS?",
-  //   options: [
-  //     { text: "padding-left", correct: false },
-  //     { text: "margin-left", correct: true },
-  //     { text: "indent-left", correct: false },
-  //     { text: "spacing-left", correct: false },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "What does JavaScript primarily use to interact with HTML elements?",
-  //   options: [
-  //     { text: "Classes", correct: false },
-  //     { text: "Events", correct: false },
-  //     { text: "DOM (Document Object Model)", correct: true },
-  //     { text: "Styles", correct: false },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "How do you write 'Hello World' in an alert box using JavaScript?",
-  //   options: [
-  //     { text: "msg('Hello World');", correct: false },
-  //     { text: "alert('Hello World');", correct: true },
-  //     { text: "alertBox('Hello World');", correct: false },
-  //     { text: "msgBox('Hello World');", correct: false },
-  //   ],
-  // },
-  // {
-  //   question: "How do you create a function in JavaScript?",
-  //   options: [
-  //     { text: "function myFunction()", correct: true },
-  //     { text: "function:myFunction()", correct: false },
-  //     { text: "create function myFunction()", correct: false },
-  //     { text: "def myFunction()", correct: false },
-  //   ],
-  // },
-  // {
-  //   question: "How do you call a function named 'myFunction' in JavaScript?",
-  //   options: [
-  //     { text: "call function myFunction()", correct: false },
-  //     { text: "call myFunction()", correct: false },
-  //     { text: "myFunction()", correct: true },
-  //     { text: "invoke myFunction()", correct: false },
-  //   ],
-  // },
-  // {
-  //   question: "How can you add a comment in JavaScript?",
-  //   options: [
-  //     { text: "!--This is a comment--", correct: false },
-  //     { text: "'This is a comment'", correct: false },
-  //     { text: "/* This is a comment */", correct: false },
-  //     { text: "//This is a comment", correct: true },
-  //   ],
-  // },
-  // {
-  //   question: "Which event occurs when the user clicks on an HTML element?",
-  //   options: [
-  //     { text: "onchange", correct: false },
-  //     { text: "onclick", correct: true },
-  //     { text: "onmouseclick", correct: false },
-  //     { text: "onmouseover", correct: false },
-  //   ],
-  // },
-  // {
-  //   question: "How do you declare a JavaScript variable?",
-  //   options: [
-  //     { text: "var carName;", correct: true },
-  //     { text: "variable carName;", correct: false },
-  //     { text: "v carName;", correct: false },
-  //     { text: "var: carName;", correct: false },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "Which operator is used to assign a value to a variable in JavaScript?",
-  //   options: [
-  //     { text: "*", correct: false },
-  //     { text: "=", correct: true },
-  //     { text: "-", correct: false },
-  //     { text: "+", correct: false },
-  //   ],
-  // },
-  // {
-  //   question: "What will the following code return: Boolean(10 > 9)?",
-  //   options: [
-  //     { text: "false", correct: false },
-  //     { text: "NaN", correct: false },
-  //     { text: "true", correct: true },
-  //     { text: "undefined", correct: false },
-  //   ],
-  // },
-  // {
-  //   question: "Is JavaScript case-sensitive?",
-  //   options: [
-  //     { text: "Yes", correct: true },
-  //     { text: "No", correct: false },
-  //     { text: "Sometimes", correct: false },
-  //     { text: "Only for strings", correct: false },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "Which of the following is a correct way to create an array in JavaScript?",
-  //   options: [
-  //     { text: "var colors = 'red', 'green', 'blue';", correct: false },
-  //     { text: "var colors = ['red', 'green', 'blue'];", correct: true },
-  //     { text: "var colors = (1:'red', 2:'green', 3:'blue');", correct: false },
-  //     { text: "var colors = {'red', 'green', 'blue'};", correct: false },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "How do you round the number 7.25 to the nearest integer in JavaScript?",
-  //   options: [
-  //     { text: "Math.rnd(7.25)", correct: false },
-  //     { text: "round(7.25)", correct: false },
-  //     { text: "Math.floor(7.25)", correct: false },
-  //     { text: "Math.round(7.25)", correct: true },
-  //   ],
-  // },
-  // {
-  //   question:
-  //     "How do you find the number with the highest value of x and y in JavaScript?",
-  //   options: [
-  //     { text: "ceil(x, y)", correct: false },
-  //     { text: "Math.ceil(x, y)", correct: false },
-  //     { text: "Math.max(x, y)", correct: true },
-  //     { text: "Math.maxValue(x, y)", correct: false },
-  //   ],
-  // },
-  // {
-  //   question: "How do you find the length of an array in JavaScript?",
-  //   options: [
-  //     { text: "arr.len", correct: false },
-  //     { text: "arr.length", correct: true },
-  //     { text: "arr.size", correct: false },
-  //     { text: "arr.count", correct: false },
-  //   ],
-  // },
+  {
+    question:
+      "How do you make each word in a text start with a capital letter in CSS?",
+    options: [
+      { text: "text-transform: uppercase;", correct: false },
+      { text: "text-transform: capitalize;", correct: true },
+      { text: "transform: capitalize;", correct: false },
+      { text: "capitalize: text-transform;", correct: false },
+    ],
+  },
+  {
+    question:
+      "What is the correct CSS syntax to change the font of an element?",
+    options: [
+      { text: "font: 'Times New Roman';", correct: false },
+      { text: "font-face: 'Times New Roman';", correct: false },
+      { text: "fontname: 'Times New Roman';", correct: false },
+      { text: "font-family: 'Times New Roman';", correct: true },
+    ],
+  },
+  {
+    question:
+      "How can you make a list that lists its items with squares in CSS?",
+    options: [
+      { text: "list-style-type: square;", correct: true },
+      { text: "list-type: square;", correct: false },
+      { text: "list: square;", correct: false },
+      { text: "list-style: square;", correct: false },
+    ],
+  },
+  {
+    question:
+      "Which property is used to change the left margin of an element in CSS?",
+    options: [
+      { text: "padding-left", correct: false },
+      { text: "margin-left", correct: true },
+      { text: "indent-left", correct: false },
+      { text: "spacing-left", correct: false },
+    ],
+  },
+  {
+    question:
+      "What does JavaScript primarily use to interact with HTML elements?",
+    options: [
+      { text: "Classes", correct: false },
+      { text: "Events", correct: false },
+      { text: "DOM (Document Object Model)", correct: true },
+      { text: "Styles", correct: false },
+    ],
+  },
+  {
+    question:
+      "How do you write 'Hello World' in an alert box using JavaScript?",
+    options: [
+      { text: "msg('Hello World');", correct: false },
+      { text: "alert('Hello World');", correct: true },
+      { text: "alertBox('Hello World');", correct: false },
+      { text: "msgBox('Hello World');", correct: false },
+    ],
+  },
+  {
+    question: "How do you create a function in JavaScript?",
+    options: [
+      { text: "function myFunction()", correct: true },
+      { text: "function:myFunction()", correct: false },
+      { text: "create function myFunction()", correct: false },
+      { text: "def myFunction()", correct: false },
+    ],
+  },
+  {
+    question: "How do you call a function named 'myFunction' in JavaScript?",
+    options: [
+      { text: "call function myFunction()", correct: false },
+      { text: "call myFunction()", correct: false },
+      { text: "myFunction()", correct: true },
+      { text: "invoke myFunction()", correct: false },
+    ],
+  },
+  {
+    question: "How can you add a comment in JavaScript?",
+    options: [
+      { text: "!--This is a comment--", correct: false },
+      { text: "'This is a comment'", correct: false },
+      { text: "/* This is a comment */", correct: false },
+      { text: "//This is a comment", correct: true },
+    ],
+  },
+  {
+    question: "Which event occurs when the user clicks on an HTML element?",
+    options: [
+      { text: "onchange", correct: false },
+      { text: "onclick", correct: true },
+      { text: "onmouseclick", correct: false },
+      { text: "onmouseover", correct: false },
+    ],
+  },
+  {
+    question: "How do you declare a JavaScript variable?",
+    options: [
+      { text: "var carName;", correct: true },
+      { text: "variable carName;", correct: false },
+      { text: "v carName;", correct: false },
+      { text: "var: carName;", correct: false },
+    ],
+  },
+  {
+    question:
+      "Which operator is used to assign a value to a variable in JavaScript?",
+    options: [
+      { text: "*", correct: false },
+      { text: "=", correct: true },
+      { text: "-", correct: false },
+      { text: "+", correct: false },
+    ],
+  },
+  {
+    question: "What will the following code return: Boolean(10 > 9)?",
+    options: [
+      { text: "false", correct: false },
+      { text: "NaN", correct: false },
+      { text: "true", correct: true },
+      { text: "undefined", correct: false },
+    ],
+  },
+  {
+    question: "Is JavaScript case-sensitive?",
+    options: [
+      { text: "Yes", correct: true },
+      { text: "No", correct: false },
+      { text: "Sometimes", correct: false },
+      { text: "Only for strings", correct: false },
+    ],
+  },
+  {
+    question:
+      "Which of the following is a correct way to create an array in JavaScript?",
+    options: [
+      { text: "var colors = 'red', 'green', 'blue';", correct: false },
+      { text: "var colors = ['red', 'green', 'blue'];", correct: true },
+      { text: "var colors = (1:'red', 2:'green', 3:'blue');", correct: false },
+      { text: "var colors = {'red', 'green', 'blue'};", correct: false },
+    ],
+  },
+  {
+    question:
+      "How do you round the number 7.25 to the nearest integer in JavaScript?",
+    options: [
+      { text: "Math.rnd(7.25)", correct: false },
+      { text: "round(7.25)", correct: false },
+      { text: "Math.floor(7.25)", correct: false },
+      { text: "Math.round(7.25)", correct: true },
+    ],
+  },
+  {
+    question:
+      "How do you find the number with the highest value of x and y in JavaScript?",
+    options: [
+      { text: "ceil(x, y)", correct: false },
+      { text: "Math.ceil(x, y)", correct: false },
+      { text: "Math.max(x, y)", correct: true },
+      { text: "Math.maxValue(x, y)", correct: false },
+    ],
+  },
+  {
+    question: "How do you find the length of an array in JavaScript?",
+    options: [
+      { text: "arr.len", correct: false },
+      { text: "arr.length", correct: true },
+      { text: "arr.size", correct: false },
+      { text: "arr.count", correct: false },
+    ],
+  },
 ];
 
 var questionEl = document.getElementById("question");
