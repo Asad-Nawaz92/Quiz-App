@@ -5,20 +5,15 @@ function signup() {
   var emailInput = document.getElementById("signup-email");
   var passwordInput = document.getElementById("signup-pass");
   var confirmpasswordInput = document.getElementById("signup-confirm-pass");
+  var agreeCheckbox = document.getElementById("agree");
 
   var name = nameInput.value;
   var email = emailInput.value;
   var password = passwordInput.value;
   var confirmPassword = confirmpasswordInput.value;
+  var agreeChecked = agreeCheckbox.checked;
 
-  if (password != confirmPassword) {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Passwords do not match.",
-    });
-    return;
-  }
+  var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   if (
     name === "" ||
@@ -34,6 +29,24 @@ function signup() {
     return;
   }
 
+  if (!agreeChecked) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Please agree to the terms and conditions.",
+    });
+    return;
+  }
+
+  if (!emailPattern.test(email)) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Invalid email format. Please use the format: example@gmail.com.",
+    });
+    return;
+  }
+
   if (password.length < 6) {
     Swal.fire({
       icon: "error",
@@ -42,6 +55,16 @@ function signup() {
     });
     return;
   }
+
+  if (password !== confirmPassword) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Passwords do not match.",
+    });
+    return;
+  }
+
   var usersJSON = localStorage.getItem("users");
   var users = usersJSON ? JSON.parse(usersJSON) : [];
 
@@ -61,6 +84,7 @@ function signup() {
   }
 
   var newUser = {
+    name: name,
     email: email,
     password: password,
   };
@@ -73,8 +97,29 @@ function signup() {
 function signin() {
   var emailInput = document.getElementById("signin-email");
   var passwordInput = document.getElementById("signin-pass");
+
   var email = emailInput.value;
   var password = passwordInput.value;
+
+  if (email === "" || password === "" || !rememberChecked) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Please fill in all fields.",
+    });
+    return;
+  }
+
+  var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if (!emailPattern.test(email)) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Invalid email format. Please use the format: example@gmail.com.",
+    });
+    return;
+  }
 
   var usersJSON = localStorage.getItem("users");
   var users = usersJSON ? JSON.parse(usersJSON) : [];
@@ -86,13 +131,23 @@ function signin() {
   if (user) {
     location.href = "./welcome.html";
   } else {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Invalid email or password. Please try again.",
-    }).then(() => {
-      location.href = "./signin.html";
-    });
+    if (
+      !users.some(function (e) {
+        return e.email === email;
+      })
+    ) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Invalid email. Please try again.",
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Invalid password. Please try again.",
+      });
+    }
   }
 }
 

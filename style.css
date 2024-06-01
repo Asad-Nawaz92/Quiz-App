@@ -13,7 +13,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   width: 100%;
-  background: url("./assets/images/bg.jpeg") no-repeat center center fixed;
+  background: url("./bg.jpeg") no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
   backdrop-filter: blur(8px);
@@ -95,7 +95,7 @@ h2 {
 }
 
 .container a {
-  color: #fff;  
+  color: #fff;
   text-decoration: none;
 }
 
@@ -113,16 +113,28 @@ button {
   border-radius: 3px;
   font-size: 16px;
   border: 2px solid transparent;
-  transition: all 0.3s;
+  transition: 0.3s ease;
 }
 
 button:hover {
   color: #fff;
-  background: #064439;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .register {
   text-align: center;
   margin-top: 30px;
-  color: #ffff;
+  color: #fff;
+}
+
+/* Autofill styles */
+.input-field input:-webkit-autofill,
+.input-field input:-webkit-autofill:hover,
+.input-field input:-webkit-autofill:focus,
+.input-field input:-webkit-autofill:active {
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff !important;
+  transition: background-color 5000s ease-in-out 0s !important;
 }
