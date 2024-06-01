@@ -120,19 +120,3 @@ body {
 .btn-start:hover {
   background-color: #228036;
 }
-
-.logout-btn {
-  background-color: #dc3545;
-  color: white;
-  width: auto;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-.logout-btn:hover {
-  background-color: #c82333;
-}

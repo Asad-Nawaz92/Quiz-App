@@ -4,49 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./assets/images/icon.png">
 </head>
 
 <body>
-    <div class="container">
-        <form>
-            <h2>Register</h2>
-            <div class="input-field">
-                <input type="text" id="signup-name">
-                <label for="signup-name">Username</label>
+    <div class="main">
+        <h1>Quiz App</h1>
+        <p class="description" style="display: block;">Test your knowledge of HTML, CSS, and JavaScript with this quiz!
+        </p>
+        <button id="start-btn" class="btn-start">Start Quiz</button>
+        <div class="app" style="display:none;">
+            <div id="timer">Time left: 10:00</div>
+            <h2 id="question">Questions</h2>
+            <div id="options-btn">
+                <button class="btn">Option1</button>
+                <button class="btn">Option2</button>
+                <button class="btn">Option3</button>
+                <button class="btn">Option4</button>
             </div>
-
-            <div class="input-field">
-                <input type="email" id="signup-email">
-                <label for="signup-email">Email</label>
-            </div>
-
-            <div class="input-field">
-                <input type="password" id="signup-pass">
-                <label for="signup-pass">Password</label>
-            </div>
-
-            <div class="input-field">
-                <input type="password" id="signup-confirm-pass">
-                <label for="signup-confirm-pass">Confirm Password</label>
-            </div>
-
-            <div class="forget">
-                <label for="agree"><input type="checkbox" id="agree">
-                    <p>Agree to terms and conditions</p>
-                </label>
-            </div>
-
-            <button type="button" onclick="signup()">Register</button>
-            <div class="register">
-                <p>Already have an account? <a href="./signin.html">Login</a></p>
-            </div>
+            <button id="nxt-btn">Next</button>
+        </div>
     </div>
-
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
